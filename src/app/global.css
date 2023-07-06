@@ -1,0 +1,14 @@
+:root {
+  /* Colors */
+  --primary-soft-blue: hsl(231, 69%, 60%);
+  --primary-soft-red: hsl(0, 94%, 66%);
+  --neutral-grayish-blue: hsl(229, 8%, 60%);
+  --neutral-very-dark-blue: hsl(229, 31%, 21%);
+
+  /* Font sizes */
+  --fz-normal: 1.2rem;
+
+  /* Font weights */
+  --fw-normal: 400;
+  --fw-enphasis: 500;
+}
