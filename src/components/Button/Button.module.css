@@ -1,20 +1,30 @@
 .button {
   box-shadow: 0rem 0.2rem 8px -2px var(--neutral-grayish-blue);
-  padding: 0.6em 1.8em;
+  padding: 0.8em 2em;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
     transform 0.2s ease-in-out;
   cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 0.25em;
+  border: 2px solid transparent;
+  border-radius: 0.4em;
   font-size: var(--fz-sm);
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
 }
 
 .button:hover {
   transform: translateY(-0.2rem);
+}
+
+/* Modifiers */
+.button--primary {
+  background-color: var(--primary-soft-blue);
+}
+
+.button--primary:hover {
+  background-color: white;
+  border-color: var(--primary-soft-blue);
+  color: var(--primary-soft-blue);
 }
 
 .button--secondary {
@@ -25,4 +35,15 @@
   background-color: white;
   border-color: var(--primary-soft-red);
   color: var(--primary-soft-red);
+}
+
+.button--white {
+  background-color: var(--neutral-soft-gray);
+  color: var(--neutral-gray);
+  font-weight: var(--fw-enphasis);
+}
+
+.button--white:hover {
+  background-color: white;
+  border-color: var(--neutral-gray);
 }
