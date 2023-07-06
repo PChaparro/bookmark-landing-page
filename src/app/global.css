@@ -2,12 +2,15 @@
   /* Colors */
   --primary-soft-blue: hsl(231, 69%, 60%);
   --primary-soft-red: hsl(0, 94%, 66%);
+  --neutral-gray: hsl(240, 6%, 43%);
+  --neutral-soft-gray: hsl(0, 0%, 97%);
   --neutral-grayish-blue: hsl(229, 8%, 60%);
   --neutral-very-dark-blue: hsl(229, 31%, 21%);
 
   /* Font sizes */
   --fz-sm: 0.85rem;
   --fz-normal: 1.2rem;
+  --fz-giant: 2.75rem;
 
   /* Font weights */
   --fw-normal: 400;
@@ -24,4 +27,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Utility classes */
+.title {
+  font-size: var(--fz-giant);
+  font-weight: var(--fw-enphasis);
+  color: var(--neutral-very-dark-blue);
+}
+
+.paragraph {
+  font-size: var(--fz-normal);
+  color: var(--neutral-grayish-blue);
+  line-height: 1.5;
 }
