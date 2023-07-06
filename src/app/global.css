@@ -12,6 +12,9 @@
   /* Font weights */
   --fw-normal: 400;
   --fw-enphasis: 500;
+
+  /* Global variables */
+  --navbar-items-gap: 2.5rem;
 }
 
 /* Reset some default styles */
