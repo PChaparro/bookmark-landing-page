@@ -1,6 +1,10 @@
 .button {
   box-shadow: 0rem 0.2rem 8px -2px var(--neutral-grayish-blue);
   padding: 0.6em 1.8em;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out,
+    transform 0.2s ease-in-out;
+  cursor: pointer;
+  border: 1px solid transparent;
   border-radius: 0.25em;
   font-size: var(--fz-sm);
   color: white;
@@ -9,6 +13,16 @@
   letter-spacing: 0.1rem;
 }
 
+.button:hover {
+  transform: translateY(-0.2rem);
+}
+
 .button--secondary {
   background-color: var(--primary-soft-red);
+}
+
+.button--secondary:hover {
+  background-color: white;
+  border-color: var(--primary-soft-red);
+  color: var(--primary-soft-red);
 }
