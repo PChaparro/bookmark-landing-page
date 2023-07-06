@@ -1,0 +1,14 @@
+.button {
+  box-shadow: 0rem 0.2rem 8px -2px var(--neutral-grayish-blue);
+  padding: 0.6em 1.8em;
+  border-radius: 0.25em;
+  font-size: var(--fz-sm);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.button--secondary {
+  background-color: var(--primary-soft-red);
+}

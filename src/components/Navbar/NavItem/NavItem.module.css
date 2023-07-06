@@ -1,0 +1,11 @@
+.navbar__link {
+  font-size: var(--fz-sm);
+  color: var(--neutral-very-dark-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.navbar__link a {
+  color: inherit;
+  text-decoration: none;
+}
