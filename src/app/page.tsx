@@ -3,6 +3,7 @@ import Container from "@/components/Container/Container";
 import Extension from "@/components/Extension/Extension";
 import FAQ from "@/components/FAQ/FAQ";
 import Features from "@/components/Features/Features";
+import Footer from "@/components/Footer/Footer";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Extension />
       <FAQ />
       <Contact />
+      <Footer />
     </>
   );
 }
