@@ -65,6 +65,7 @@ export default function FeaturesSlider() {
               className={Styles.feature__image}
               width={536}
               height={380}
+              loading="eager"
             />
             <div className={Styles["feature__texts"]}>
               <h3 className="subtitle">{features[activeFeatureIndex].title}</h3>

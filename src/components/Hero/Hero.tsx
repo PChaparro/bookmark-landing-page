@@ -27,6 +27,7 @@ export default function Hero() {
               width={650}
               height={460}
               alt="Hero Image"
+              loading="eager"
             />
             <div className={Styles.hero__shape} />
           </div>
