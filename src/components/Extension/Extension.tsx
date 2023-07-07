@@ -36,7 +36,11 @@ export default function Extension() {
       <Container size="large">
         <div className={Styles.extensions}>
           {browsers.map((browser, index) => (
-            <BrowserCard {...browser} index={index} />
+            <BrowserCard
+              {...browser}
+              index={index}
+              key={`extension-card-${index}`}
+            />
           ))}
         </div>
       </Container>
