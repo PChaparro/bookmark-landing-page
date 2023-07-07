@@ -3,3 +3,7 @@
   margin: 0px auto;
   padding: 0px 16px;
 }
+
+.container--md {
+  max-width: 768px;
+}

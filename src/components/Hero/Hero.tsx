@@ -6,7 +6,7 @@ import Container from "../Container/Container";
 export default function Hero() {
   return (
     <div className={Styles["hero-wrapper"]}>
-      <Container>
+      <Container size="large">
         <section className={Styles.hero}>
           <div className={Styles.hero__texts}>
             <h1 className="title">A Simple Bookmark Manager</h1>
