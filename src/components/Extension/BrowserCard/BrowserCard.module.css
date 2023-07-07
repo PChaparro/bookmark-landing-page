@@ -1,0 +1,40 @@
+.card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.4rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 0.75rem;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card__separator {
+  margin-block: 0.5rem;
+  width: 100%;
+  height: 8px;
+  background-image: url("/images/bg-dots.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 956px) {
+  .card:last-child {
+    margin-block-start: 0.5rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-block-start: 0.5rem !important;
+  }
+
+  .card:first-child {
+    margin-block-start: 2rem !important;
+  }
+}
