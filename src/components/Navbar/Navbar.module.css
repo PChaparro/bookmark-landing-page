@@ -37,6 +37,12 @@
   display: none;
 }
 
+/* Fix the socials icons to the bottom of the mobile navigation */
+.navbar__social {
+  height: max-content;
+  align-self: flex-end;
+}
+
 @media screen and (max-width: 768px) {
   /* Show the light version of the icons (logo / close) */
   .navbar__toggle-icon,
@@ -79,5 +85,12 @@
   .navbar__links {
     gap: 0; /* The gap is replaced by a padding */
     width: 100%;
+  }
+
+  /* TODO: Find a better way to change the size and styles of the login button */
+  .navbar__mobile-wrapper a {
+    text-align: center;
+    width: 100%;
+    box-shadow: none;
   }
 }

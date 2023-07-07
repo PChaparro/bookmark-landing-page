@@ -64,14 +64,23 @@ export default function Navbar() {
         {/* Shared navigation links */}
         <ul className={Styles.navbar__links}>
           {NavItems.map((item, index) => (
-            <NavItem key={`navitem-${index}`} {...item} />
+            <NavItem
+              key={`navitem-${index}`}
+              {...item}
+              clickCallback={handleToggleMenu}
+            />
           ))}
         </ul>
         <Button type="anchor" style="secondary" label="Login" />
 
         {/* Social media icons*/}
         <div className={Styles.navbar__socials}>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={Styles.navbar__social}
+          >
             <Image
               src="/icons/icon-facebook.svg"
               alt="Facebook icon"
@@ -79,7 +88,12 @@ export default function Navbar() {
               height={24}
             />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={Styles.navbar__social}
+          >
             <Image
               src="/icons/icon-twitter.svg"
               alt="Twitter icon"
