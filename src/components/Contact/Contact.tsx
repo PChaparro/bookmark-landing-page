@@ -7,7 +7,7 @@ import { FormEvent } from "react";
 
 export default function Contact() {
   return (
-    <section className={Styles.background}>
+    <section className={Styles.background} id="contact">
       <Container size="small">
         <div className={Styles.contact}>
           <p className={Styles.contact__heading}>35.000+ already joined</p>
