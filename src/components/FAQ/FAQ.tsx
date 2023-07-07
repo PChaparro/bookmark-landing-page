@@ -1,3 +1,5 @@
+import Button from "../Button/Button";
+import Center from "../Center/Center";
 import Container from "../Container/Container";
 import Accordion from "./Accordion/Accordion";
 import Styles from "./FAQ.module.css";
@@ -38,6 +40,9 @@ export default function FAQ() {
       <Container size="medium">
         <Accordion items={questions} title="faq" />
       </Container>
+      <Center>
+        <Button type="anchor" style="primary" label="More Info" />
+      </Center>
     </section>
   );
 }
