@@ -10,6 +10,7 @@
   /* Font sizes */
   --fz-sm: 0.85rem;
   --fz-normal: 1.2rem;
+  --fz-lg: 2rem;
   --fz-giant: 2.75rem;
 
   /* Font weights */
@@ -30,14 +31,27 @@
 }
 
 /* Utility classes */
-.title {
-  font-size: var(--fz-giant);
+.title,
+.subtitle {
   font-weight: var(--fw-enphasis);
   color: var(--neutral-very-dark-blue);
+}
+
+.title {
+  font-size: var(--fz-giant);
+}
+
+.subtitle {
+  font-size: var(--fz-lg);
+  margin-block-end: 1rem;
 }
 
 .paragraph {
   font-size: var(--fz-normal);
   color: var(--neutral-grayish-blue);
   line-height: 1.5;
+}
+
+.text--centered {
+  text-align: center;
 }
