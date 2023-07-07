@@ -6,7 +6,7 @@ interface ButtonProps {
   style: "primary" | "secondary" | "white";
   type: "anchor" | "button";
   href?: string; // Type = anchor
-  callback?: () => void; // Type = button
+  callback?: (e?: any) => void; // Type = button
 }
 
 const buttonStyles = {
