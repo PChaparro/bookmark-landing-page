@@ -44,7 +44,11 @@ export default function FeaturesSlider() {
               className={`${Styles.option} ${
                 activeFeatureIndex === index ? Styles["option--active"] : ""
               }`}
+              tabIndex={0}
               onClick={() => handleFeatureClick(index)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleFeatureClick(index);
+              }}
             >
               {feature.nav}
             </li>
