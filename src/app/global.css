@@ -10,6 +10,7 @@
   /* Font sizes */
   --fz-sm: 0.85rem;
   --fz-normal: 1.2rem;
+  --fz-md: 1.4rem;
   --fz-lg: 2rem;
   --fz-giant: 2.75rem;
 
@@ -31,6 +32,10 @@
 }
 
 /* Utility classes */
+.section {
+  margin-block: 2rem 6rem;
+}
+
 .title,
 .subtitle {
   font-weight: var(--fw-enphasis);
@@ -44,6 +49,11 @@
 .subtitle {
   font-size: var(--fz-lg);
   margin-block-end: 1rem;
+}
+
+.subtitle--sm {
+  font-size: var(--fz-md);
+  margin-block-end: 0;
 }
 
 .paragraph {
