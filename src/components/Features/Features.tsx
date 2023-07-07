@@ -4,7 +4,7 @@ import FeaturesSlider from "./FeaturesSlider/FeaturesSlider";
 
 export default function Features() {
   return (
-    <>
+    <section className="section">
       <Container size="medium">
         <h2 className="subtitle text--centered">Features</h2>
         <p className="paragraph text--centered">
@@ -14,6 +14,6 @@ export default function Features() {
         </p>
       </Container>
       <FeaturesSlider />
-    </>
+    </section>
   );
 }
