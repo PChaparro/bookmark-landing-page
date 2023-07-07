@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact/Contact";
 import Container from "@/components/Container/Container";
 import Extension from "@/components/Extension/Extension";
 import FAQ from "@/components/FAQ/FAQ";
@@ -15,6 +16,7 @@ export default function Home() {
       <Features />
       <Extension />
       <FAQ />
+      <Contact />
     </>
   );
 }

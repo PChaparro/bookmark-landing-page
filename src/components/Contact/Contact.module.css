@@ -1,0 +1,87 @@
+.background {
+  padding-block: 3rem;
+  width: 100%;
+  background-color: var(--primary-soft-blue);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.contact__heading {
+  font-size: var(--fz-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.contact__title {
+  font-size: var(--fz-lg);
+}
+
+.contact__form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.contact__input-container {
+  flex-grow: 1;
+  position: relative;
+}
+
+.contact__input {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0.4em;
+}
+
+.contact__error {
+  margin-block-start: -5px;
+  display: none;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-soft-red);
+  border-radius: 0 0 0.4em 0.4em;
+  font-size: var(--fz-sm);
+  text-align: start;
+}
+
+.contact__error-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
+.contact__input:invalid {
+  border: 2px solid var(--primary-soft-red);
+}
+
+.contact__input:invalid + .contact__error,
+.contact__input:invalid ~ .contact__error-icon {
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  .contact__input-container {
+    width: 100%;
+    height: 2.8rem;
+  }
+
+  .contact__input {
+    height: 100%;
+  }
+
+  .contact__form button {
+    margin-block-start: 1rem;
+    width: 100%;
+  }
+}
